@@ -43,10 +43,12 @@ body{
     height: 100%;
 }
 .wrapper {
-    max-width: 1440px;
+    width: 1382px;
     margin: 0 auto;
 }
 .header {
+    width: 1382px;
+    margin: 0 auto;
     height: 90px;
     background-color: rgb(80, 75, 75);
 }
