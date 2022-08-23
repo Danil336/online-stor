@@ -8,7 +8,6 @@ export function cheapSort() {
             if(+goods.children[i].getAttribute('data-costsort') > +goods.children[j].getAttribute('data-costsort')){
                 replacedNode = goods.replaceChild(goods.children[j], goods.children[i]);
                 insertAfter(replacedNode, goods.children[i])
-                console.log(replacedNode)
             }
         }
     }
@@ -19,7 +18,6 @@ export function cheapSortReverse() {
             if(+goods.children[i].getAttribute('data-costsort') < +goods.children[j].getAttribute('data-costsort')){
                 replacedNode = goods.replaceChild(goods.children[j], goods.children[i]);
                 insertAfter(replacedNode, goods.children[i])
-                console.log(replacedNode)
             }
         }
     }
@@ -30,7 +28,6 @@ export function ratingSort() {
             if(+goods.children[i].getAttribute('data-rating') < +goods.children[j].getAttribute('data-rating')){
                 replacedNode = goods.replaceChild(goods.children[j], goods.children[i]);
                 insertAfter(replacedNode, goods.children[i])
-                console.log(replacedNode)
             }
         }
     }

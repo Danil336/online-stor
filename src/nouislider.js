@@ -39,7 +39,6 @@ if(rangeSlider) {
 
     inputs.forEach((elem, index) => {
         elem.addEventListener("change", event => {
-            console.log(input0.value)
             setRangeSlider(index, event.currentTarget.value)
            
         })
