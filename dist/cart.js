@@ -27,7 +27,6 @@ if(cartStorage.length){
 
         cartSide.append(newCard)
         
-        // finalSum.innerText = priceDog + '$'
     });
 }
     
@@ -89,31 +88,10 @@ document.addEventListener('click', event => {
         
     }
 })
-console.log(cartStorage)
 document.addEventListener('click', event => {
     const cart = cartStorage
-    // const cardD = { nameDog, priceDog }
     if(event.target.classList.contains('button-delete')){
-        event.target.parentNode.parentNode.classList.add('hide');
-        // [...card].forEach(elem => {
-        //     if(elem.classList.contains('hide')){
-        //         // console.log(elem.getAttribute('data-name'))
-        //         JSON.parse(localStorage.getItem('cart')).forEach(elem2 => {
-        //             for(let i in elem2){
-        //                 console.log(elem.getAttribute('data-name'))
-        //                 console.log(elem2['nameDog'])
-        //                 if(elem.getAttribute('data-name') == elem2['nameDog']){
-        //                     // elem2 = null
-        //                     // localStorage.setItem("cart", JSON.stringify([...cart]))
-                            
-        //                 }
-        //                 break    
-        //             }
-        //         })
-                
-        //         // if()
-        //     } 
-        // })   
+        event.target.parentNode.parentNode.classList.add('hide'); 
         localStorage.removeItem('cart');
             fullPrice -= Number(event.target.parentNode.parentNode.getAttribute('data-c'))
         finalSum.innerText = fullPrice + '$'

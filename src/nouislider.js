@@ -27,9 +27,7 @@ if(rangeSlider) {
                 goods.children[i].classList.remove('hide5')
             }
         }
-
     })
-
     const setRangeSlider = (i, value) => {
         let arr = [null, null]
         arr[i] = value
@@ -42,10 +40,6 @@ if(rangeSlider) {
             setRangeSlider(index, event.currentTarget.value)
            
         })
-    
     })
-    
-
-
 }
 }

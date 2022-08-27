@@ -1,7 +1,7 @@
-const search = document.querySelector('.search')
+const search = document.querySelector('.search');
 
 
-export function elasticSearch() {
+function elasticSearch() {
     let val = search.value.trim().toLowerCase()
     let elastickItems = document.querySelectorAll('.dog')
     if(val != ''){
@@ -17,4 +17,8 @@ export function elasticSearch() {
             elem.classList.remove('hide')
         })
     }
-}
+};
+
+search.addEventListener('input', event => {
+    elasticSearch()
+})
